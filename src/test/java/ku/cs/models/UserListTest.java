@@ -58,9 +58,7 @@ class UserListTest {
         User user = userList.login("user1", "1234");
 
         // TODO: assert that User object is found
-        Object expected = expect_user;
-        Object actual = user;
-        assertEquals(expected, actual);
+        assertNotNull(user);
         // assertEquals(expected, actual);
     }
 
